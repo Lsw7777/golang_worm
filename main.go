@@ -14,7 +14,7 @@ func printCity(contents []byte) { // []byte就是字符串
 	for _, v := range matches { // 遍历打印所有结果
 		fmt.Printf("city:%s,URL:%s\n", v[2], v[1]) // 从html元素中截取city和URL，其它的内容忽略
 	}
-	fmt.Printf("%d\n", len(matches)) // %d使用十进制格式显示
+	fmt.Printf("数据总条数:%d\n", len(matches)) // %d使用十进制格式显示
 }
 
 func main() {
